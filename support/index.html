@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chupi Support</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        color: #0f172a;
+        background: linear-gradient(180deg, #f8fafc 0%, #ffffff 60%, #f1f5f9 100%);
+      }
+
+      header {
+        padding: 4rem 1.5rem 2.5rem;
+        text-align: center;
+      }
+
+      .brand {
+        font-weight: 700;
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+      }
+
+      .intro {
+        max-width: 680px;
+        margin: 0 auto;
+        font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+        color: #1f2937;
+      }
+
+      main {
+        max-width: 840px;
+        margin: 0 auto;
+        padding: 0 1.5rem 4rem;
+        display: grid;
+        gap: 1.75rem;
+      }
+
+      section {
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      }
+
+      h2 {
+        margin: 0 0 0.85rem;
+        font-size: clamp(1.2rem, 2.3vw, 1.55rem);
+        color: #0b1621;
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: #1f2937;
+      }
+
+      ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1.25rem;
+        color: #1f2937;
+      }
+
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+      }
+
+      .nav a {
+        font-weight: 600;
+        color: #1d4ed8;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1.5rem 2.5rem;
+        color: #4b5563;
+        font-size: 0.95rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+        }
+
+        body {
+          color: #e5edf5;
+          background: radial-gradient(circle at top, #1f2937, #111827 65%);
+        }
+
+        .intro {
+          color: #cbd5f5;
+        }
+
+        section {
+          background: rgba(30, 41, 59, 0.75);
+          box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+        }
+
+        p,
+        ul {
+          color: #d1d5db;
+        }
+
+        .nav a {
+          color: #93c5fd;
+        }
+
+        footer {
+          color: #94a3b8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">Chupi Support</div>
+      <p class="intro">
+        Need help with the Chupi app? Reach out anytime—our small team reads every message and aims to respond within one business day.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Email Us</h2>
+        <p>
+          The fastest way to get support is to email us directly. Include the email you use in the app and any screenshots that help explain the issue.
+        </p>
+        <p>
+          <strong>Support inbox:</strong>
+          <a href="mailto:getweyv@gmail.com">getweyv@gmail.com</a>
+        </p>
+        <p>
+          We’re based in the Pacific time zone and typically reply Monday–Friday.
+        </p>
+      </section>
+
+      <section>
+        <h2>Common Requests</h2>
+        <ul>
+          <li>Reset your password from the app login screen; tap “Forgot password.”</li>
+          <li>Manage or cancel subscriptions in your Apple ID settings.</li>
+          <li>Delete your account directly in the app under <em>Settings &gt; Account</em>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Feedback &amp; Ideas</h2>
+        <p>
+          We’re building Chupi alongside our earliest users. If there’s a feature that would make meal planning easier, let us know.
+        </p>
+        <p>
+          Send feedback through the app or email us with the subject line “Feature idea.”
+        </p>
+      </section>
+
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/chupi/privacy/">Privacy</a>
+        <a href="/chupi/terms/">Terms</a>
+      </div>
+    </main>
+
+    <footer>© <span id="year"></span> Chupi. All rights reserved.</footer>
+
+    <script>
+      const yearSpan = document.getElementById("year");
+      yearSpan.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
